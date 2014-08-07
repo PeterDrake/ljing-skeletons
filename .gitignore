@@ -1,0 +1,5 @@
+*.class
+bin
+*.lock
+*.DS_Store
+stdlib.jar
