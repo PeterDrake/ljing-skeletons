@@ -51,7 +51,7 @@ public class Mazes {
 
 	/**
 	 * Returns true if pair, assumed to be an array of two numbers, has the same
-	 * numbers one of the first n elements of list.
+	 * numbers as one of the first n elements of list.
 	 */
 	public static boolean contains(int[] pair, int[][] list, int n) {
 		// TODO You have to write this, replacing the line below
@@ -67,9 +67,9 @@ public class Mazes {
 	 *            specified by the constants NORTH, EAST, SOUTH, and WEST.
 	 */
 	public static void drawMaze(boolean[][][] passages) {
-		int width = passages.length;
 		StdDraw.clear(StdDraw.PINK);
 		StdDraw.setPenColor(StdDraw.WHITE);
+		int width = passages.length;
 		StdDraw.setPenRadius(0.75 / width);
 		// Draw passages
 		for (int x = 0; x < width; x++) {
@@ -238,7 +238,7 @@ public class Mazes {
 
 	/**
 	 * Returns a path (sequence of locations) leading from start to goal in
-	 * passages.
+	 * passages or null if there is no such path.
 	 * 
 	 * @param passages
 	 *            passages[x][y][direction] is true if there is a passage from

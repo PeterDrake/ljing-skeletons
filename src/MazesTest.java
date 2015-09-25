@@ -19,9 +19,9 @@ public class MazesTest {
 		Mazes.remove(new int[] { 3, 4 }, list, list.length);
 		assertEquals("[[1, 2], [5, 8], [4, 3], [5, 8]]",
 				java.util.Arrays.deepToString(list));
-		// Remove 1, 2 from the first two elements of list
-		Mazes.remove(new int[] { 1, 2 }, list, 2);
-		assertEquals("[[5, 8], [5, 8], [4, 3], [5, 8]]",
+		// Remove 1, 2 from the first three elements of list
+		Mazes.remove(new int[] { 1, 2 }, list, 3);
+		assertEquals("[[4, 3], [5, 8], [4, 3], [5, 8]]",
 				java.util.Arrays.deepToString(list));
 	}
 
